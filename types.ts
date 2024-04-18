@@ -1,14 +1,8 @@
-import { StaticImageData } from 'next/image';
 import { ReactElement } from 'react';
 
 export interface ProjectCardType {
   title: string;
-  banner?: string;
-  bannerAlt?: string;
-  summary: string;
-  description?: string;
-  media?: MediaImageType[];
-  tags?: string[];
+  image: string;
   links: { name: string; path: string; icon?: ReactElement }[];
 }
 
