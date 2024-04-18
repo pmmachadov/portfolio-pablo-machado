@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { ReactElement } from 'react';
 
 export interface ProjectCardType {
@@ -39,4 +40,12 @@ export interface MediaImageType {
     height: number;
     width: number;
   };
+}
+
+export interface ImageComponentProps {
+  src?: string;
+  alt: string;
+  className?: string;
+  width?: string;
+  height?: string;
 }
