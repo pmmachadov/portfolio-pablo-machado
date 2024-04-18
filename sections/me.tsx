@@ -5,14 +5,13 @@ import {
   faCodeBranch,
   faUpRightFromSquare,
   faComments,
+  faDatabase,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faReact,
   faHtml5,
   faCss3,
-  faSass,
   faJs,
-  faBootstrap,
   faNodeJs,
   faLinkedin,
   faGithub,
@@ -56,7 +55,7 @@ export const links: NavLinkType[] = [
     path: '#intro',
     icon: (
       <FontAwesomeIcon
-        icon={faRobot}
+        icon={ faRobot }
         title='scroll to section: intro'
         size='lg'
       />
@@ -67,7 +66,7 @@ export const links: NavLinkType[] = [
     path: '#skills',
     icon: (
       <FontAwesomeIcon
-        icon={faFileCode}
+        icon={ faFileCode }
         title='scroll to section: software'
         size='lg'
       />
@@ -78,7 +77,7 @@ export const links: NavLinkType[] = [
     path: '#projects',
     icon: (
       <FontAwesomeIcon
-        icon={faWindowMaximize}
+        icon={ faWindowMaximize }
         title='scroll to section: projects'
         size='lg'
       />
@@ -89,7 +88,7 @@ export const links: NavLinkType[] = [
     path: '#contact',
     icon: (
       <FontAwesomeIcon
-        icon={faComments}
+        icon={ faComments }
         title='scroll to section: contact'
         size='lg'
       />
@@ -102,20 +101,20 @@ export const links: NavLinkType[] = [
 
 export const socialLinks: SocialLinkType[] = [
   {
-    icon: <FontAwesomeIcon icon={faGithub} title='github' size='2x' />,
-    link: 'https://github.com/vanquiche',
+    icon: <FontAwesomeIcon icon={ faGithub } title='github' size='2x' />,
+    link: 'https://github.com/pmmachadov',
     title: 'github',
+    target: '_blank',
+    rel: 'noopener noreferrer'
   },
   {
-    icon: <FontAwesomeIcon icon={faLinkedin} title='linkedIn' size='2x' />,
-    link: 'https://linkedin.com/in/stevevang',
+    icon: <FontAwesomeIcon icon={ faLinkedin } title='linkedIn' size='2x' />,
+    link: 'https://www.linkedin.com/in/pmmachadov/?locale=en_US',
     title: 'linkedIn',
+    target: '_blank',
+    rel: 'noopener noreferrer'
   },
-  {
-    icon: <FontAwesomeIcon icon={faTwitter} title='twitter' size='2x' />,
-    link: 'https://twitter.com/stevevangdev',
-    title: 'twitter',
-  },
+
 ]; //
 // PROJECT CARDS
 //
@@ -142,12 +141,12 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://walkie-buddy.vercel.app/',
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
       },
       {
         name: 'code',
         path: 'https://github.com/vanquiche/server-side-validation',
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
       },
     ],
   },
@@ -171,12 +170,12 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://todaytasklist.netlify.app/',
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
       },
       {
         name: 'code',
         path: 'https://github.com/vanquiche/today-task',
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
       },
     ],
   },
@@ -224,12 +223,12 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://apps.apple.com/us/app/flip-flashcard/id1637560175?l=en',
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
       },
       {
         name: 'code',
         path: 'https://github.com/vanquiche/flip-flashcard-app',
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
       },
     ],
   },
@@ -291,12 +290,12 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://kutsu-shop.netlify.app/',
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
       },
       {
         name: 'code',
         path: 'https://github.com/vanquiche/kutsu-eCommerce',
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
       },
     ],
   },
@@ -310,66 +309,51 @@ export const projectData: ProjectCardType[] = [
 export const skillcard_Styles: SkillItemType[] = [
   {
     text: 'JavaScript',
-    icon: <FontAwesomeIcon icon={faJs} size='2x' />,
-    skillLevel: '100%',
+    icon: <FontAwesomeIcon icon={ faJs } size='2x' />,
+    skillLevel: '80%',
   },
   {
     text: 'TypeScript',
-    icon: <CustomIcon path='/icons/typescript-icon.png' size={45} />,
-    skillLevel: '100%',
+    icon: <CustomIcon path='/icons/typescript-icon.png' size={ 40 } />,
+    skillLevel: '70%',
   },
   {
     text: 'React',
-    icon: <FontAwesomeIcon icon={faReact} size='2x' />,
-    skillLevel: '100%',
-  },
-  {
-    text: 'Next',
-    icon: <CustomIcon path='/icons/next-js.256x256.png' size={46} />,
-    skillLevel: '100%',
+    icon: <FontAwesomeIcon icon={ faReact } size='2x' />,
+    skillLevel: '70%',
   },
 ];
 export const skillcard_Languages: SkillItemType[] = [
   {
     text: 'HTML5',
-    icon: <FontAwesomeIcon icon={faHtml5} size='2x' />,
+    icon: <FontAwesomeIcon icon={ faHtml5 } size='2x' />,
     skillLevel: '100%',
   },
   {
     text: 'CSS',
-    icon: <FontAwesomeIcon icon={faCss3} size='2x' />,
+    icon: <FontAwesomeIcon icon={ faCss3 } size='2x' />,
     skillLevel: '100%',
   },
   {
-    text: 'SASS',
-    icon: <FontAwesomeIcon icon={faSass} size='2x' />,
-    skillLevel: '100%',
-  },
-  {
-    text: 'Tailwind',
-    icon: <CustomIcon path='/icons/tailwind-icon.png' size={45} />,
-    skillLevel: '100%',
+    text: 'GIT',
+    icon: <FontAwesomeIcon icon={ faGithub } size='2x' />,
+    skillLevel: '90%',
   },
 ];
 export const skillcard_Frameworks: SkillItemType[] = [
   {
-    text: 'Redux',
-    icon: <CustomIcon path='/icons/icons8-redux-150.png' size={39} />,
-    skillLevel: '100%',
+    text: 'Node.js',
+    icon: <FontAwesomeIcon icon={ faNodeJs } size='2x' />,
+    skillLevel: '70%',
   },
   {
-    text: 'Node',
-    icon: <FontAwesomeIcon icon={faNodeJs} size='2x' />,
-    skillLevel: '100%',
-  },
-  {
-    text: 'Cypress',
-    icon: <CustomIcon path='/icons/cypress-icon.png' size={40} />,
-    skillLevel: '100%',
+    text: 'SQL',
+    icon: <FontAwesomeIcon icon={ faDatabase } size='2x' />,
+    skillLevel: '60%',
   },
   {
     text: 'Jest',
-    icon: <CustomIcon path='/icons/jest-icon.png' size={45} />,
-    skillLevel: '100%',
+    icon: <CustomIcon path='/icons/jest-icon.png' size={ 40 } />,
+    skillLevel: '50%',
   },
 ];

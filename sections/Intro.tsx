@@ -17,7 +17,7 @@ const Intro = () => {
 
   return (
     // change your title and section id
-    <SectionCard id='intro' title='ABOUT' page='01'>
+    <SectionCard id='intro' title='ABOUT' page='ABOUT'>
       <>
         <BgTitle title='ABOUT' />
         <div>

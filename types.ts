@@ -28,6 +28,8 @@ export interface SocialLinkType {
   icon: ReactElement;
   link: string;
   title: string;
+  target: string;
+  rel: string;
 }
 
 export interface MediaImageType {
