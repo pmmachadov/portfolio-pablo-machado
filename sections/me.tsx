@@ -154,17 +154,17 @@ export const projectData: ProjectCardType[] = [
     ],
   },
   {
-    title: 'Super Heroes App',
-    image: '/assets/images/heroesMain.jpg',
+    title: 'Pokedex',
+    image: '/assets/images/pokemon-go.png',
     links: [
       {
         name: 'Live Project',
-        path: 'https://fanciful-snickerdoodle-bde97c.netlify.app/marvel',
+        path: 'https://keen-kataifi-559ed9.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
       },
       {
         name: 'Code',
-        path: 'https://github.com/pmmachadov/super-heroes-app',
+        path: 'https://github.com/pmmachadov/Javascript-Pokedex',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
       },
     ],
@@ -186,7 +186,7 @@ export const skillcard_Styles: SkillItemType[] = [
   {
     text: 'TypeScript',
     icon: <CustomIcon path='/icons/typescript-icon.png' size={ 40 } />,
-    skillLevel: '70%',
+    skillLevel: '60%',
   },
   {
     text: 'React',
@@ -203,7 +203,7 @@ export const skillcard_Languages: SkillItemType[] = [
   {
     text: 'CSS',
     icon: <FontAwesomeIcon icon={ faCss3 } size='2x' />,
-    skillLevel: '100%',
+    skillLevel: '90%',
   },
   {
     text: 'GIT',
