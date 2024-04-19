@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@styles/ProjectCard.module.sass';
 
+import { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.
+
 interface Props {
   project: ProjectCardType;
 }
