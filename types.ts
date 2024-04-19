@@ -2,12 +2,7 @@ import { ReactElement } from 'react';
 
 export interface ProjectCardType {
   title: string;
-  banner?: string;
-  bannerAlt?: string;
-  summary: string;
-  description?: string;
-  media?: MediaImageType[];
-  tags?: string[];
+  image: string;
   links: { name: string; path: string; icon?: ReactElement }[];
 }
 
@@ -27,6 +22,8 @@ export interface SocialLinkType {
   icon: ReactElement;
   link: string;
   title: string;
+  target: string;
+  rel: string;
 }
 
 export interface MediaImageType {
@@ -39,4 +36,12 @@ export interface MediaImageType {
     height: number;
     width: number;
   };
+}
+
+export interface ImageComponentProps {
+  src?: string;
+  alt: string;
+  className?: string;
+  width?: string;
+  height?: string;
 }
