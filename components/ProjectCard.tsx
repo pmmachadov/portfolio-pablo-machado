@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@styles/ProjectCard.module.sass';
 
+
 interface Props {
-  project: ProjectCardType;
+  project: {
+    title: string;
+    image: string;
+    links: {
+      path: string;
+      icon: React.ReactNode;
+      name: string;
+    }[];
+  };
 }
 
 const ProjectCard = ({ project }: Props) => {
