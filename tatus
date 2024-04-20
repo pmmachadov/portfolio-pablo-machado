@@ -1,0 +1,43 @@
+[33mcommit 1cd92ec4269abe79a8b19f628ddbc9384862d8c7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mimprovements[m[33m)[m
+Author: pmmachadov <pmmachadov@gmail.com>
+Date:   Sat Apr 20 09:50:34 2024 +0200
+
+    t add .
+    git add .
+    git revert --continue
+    git push origin improvements
+    
+    git add types.ts
+    git add types.ts
+    git push origin improvements
+    
+    qRevert "Types modified"
+    
+    This reverts commit b778f635c367886bf0792dfd8de8143a05d18de6.
+
+[1mdiff --git a/components/ProjectCard.tsx b/components/ProjectCard.tsx[m
+[1mindex 05c083f..e228882 100644[m
+[1m--- a/components/ProjectCard.tsx[m
+[1m+++ b/components/ProjectCard.tsx[m
+[36m@@ -1,18 +1,12 @@[m
+ import Image from 'next/image';[m
+ import React, { useRef, useState } from 'react';[m
+[32m+[m[32mimport { FontAwesomeIcon } from '@fortawesome/react-fontawesome';[m
+ import styles from '@styles/ProjectCard.module.sass';[m
+ [m
+[32m+[m[32mimport { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.[m
+ [m
+ interface Props {[m
+[31m-  project: {[m
+[31m-    title: string;[m
+[31m-    image: string;[m
+[31m-    links: {[m
+[31m-      path: string;[m
+[31m-      icon: React.ReactNode;[m
+[31m-      name: string;[m
+[31m-    }[];[m
+[31m-  };[m
+[32m+[m[32m  project: ProjectCardType;[m
+ }[m
+ [m
+ const ProjectCard = ({ project }: Props) => {[m
