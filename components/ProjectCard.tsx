@@ -1,18 +1,12 @@
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@styles/ProjectCard.module.sass';
 
+import { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.
 
 interface Props {
-  project: {
-    title: string;
-    image: string;
-    links: {
-      path: string;
-      icon: React.ReactNode;
-      name: string;
-    }[];
-  };
+  project: ProjectCardType;
 }
 
 const ProjectCard = ({ project }: Props) => {
