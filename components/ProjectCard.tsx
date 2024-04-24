@@ -1,10 +1,17 @@
 import Image from 'next/image';
 import styles from '@styles/ProjectCard.module.sass';
-import { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.
 import React from 'react';
 
 interface Props {
-  project: ProjectCardType;
+  project: {
+    title: string;
+    image: string;
+    links: {
+      name: string;
+      path: string;
+      icon?: React.ReactNode; // Adjust according to the actual usage
+    }[];
+  };
 }
 
 const ProjectCard = ({ project }: Props) => {
@@ -30,9 +37,9 @@ const ProjectCard = ({ project }: Props) => {
         ) }
         <div className={ styles.projectCardDetails }>
           <div className={ styles.projectCardLinkContainer }>
-            { project.links.map((link) => (
+            { project.links.map((link: { name: string; path: string; icon?: React.ReactNode }, index: number) => (
               <a
-                key={ link.id }
+                key={ link.name + index }
                 href={ link.path }
                 target="_blank"
                 rel="noopener noreferrer"
