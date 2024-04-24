@@ -28,12 +28,17 @@ const SkillCard = ({ items, itemHeight }: Props) => {
   };
 
   const itemPosition = (i: number) => {
+    let top;
+    if (isVisible) {
+      top = itemHeight * i;
+    } else if (hasRender.current) {
+      top = itemHeight * i;
+    } else {
+      top = -itemHeight;
+    }
+
     return {
-      top: isVisible
-        ? itemHeight * i
-        : hasRender.current
-        ? itemHeight * i
-        : -itemHeight,
+      top,
       height: itemHeight,
     };
   };
@@ -41,27 +46,27 @@ const SkillCard = ({ items, itemHeight }: Props) => {
   return (
     <div>
       <div
-        ref={ref}
-        className={styles.skillItemContainer}
-        style={containerHeight}
+        ref={ ref }
+        className={ styles.skillItemContainer }
+        style={ containerHeight }
       >
-        {items.map((x, i) => {
+        { items.map((x, i) => {
           return (
-            <div key={i} style={itemPosition(i)} className={styles.skillItem}>
-              {x.icon ? x.icon : null}
-              <div className={styles.skillItemTextWrapper}>
+            <div key={ i } style={ itemPosition(i) } className={ styles.skillItem }>
+              { x.icon ? x.icon : null }
+              <div className={ styles.skillItemTextWrapper }>
                 <ProgressBarContainer
-                  animateTo={x.skillLevel}
-                  containerStyle={progressBarStyle}
-                  fixed={isVisible || hasRender.current}
+                  animateTo={ x.skillLevel }
+                  containerStyle={ progressBarStyle }
+                  fixed={ isVisible || hasRender.current }
                   delay='800ms'
                 >
-                  <span className={styles.skillItemText}>{x.text}</span>
+                  <span className={ styles.skillItemText }>{ x.text }</span>
                 </ProgressBarContainer>
               </div>
             </div>
           );
-        })}
+        }) }
       </div>
     </div>
   );

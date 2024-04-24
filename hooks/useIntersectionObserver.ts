@@ -7,9 +7,9 @@ const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, thre
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: threshold || 0.5,
+    threshold: threshold ?? 0.5,
   };
-  function entryCallback(entries: IntersectionObserverEntry[]) {
+  function entryCallback (entries: IntersectionObserverEntry[]) {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
     if (entry.isIntersecting) {
@@ -20,9 +20,9 @@ const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, thre
 
   useEffect(() => {
     const observer = new IntersectionObserver(entryCallback, options);
-    if (ref && ref.current) observer.observe(ref.current)
+    if (ref?.current) observer.observe(ref.current);
     return () => {
-      if (ref && ref.current) observer.unobserve(ref.current);
+      if (ref?.current) observer.unobserve(ref.current);
     };
   }, [ref, options]);
 

@@ -34,7 +34,7 @@ const ProgressBarContainer = ({
     color: fixed ? themeStyle.backgroundColor : 'inherit',
   };
 
-  function invertColor() {
+  function invertColor () {
     if (contentContainer.current) {
       contentContainer.current.style.color = themeStyle.backgroundColor;
     }
@@ -45,7 +45,7 @@ const ProgressBarContainer = ({
     }
   }
 
-  function resetColor() {
+  function resetColor () {
     if (contentContainer.current) {
       contentContainer.current.style.color = '';
     }
@@ -56,24 +56,23 @@ const ProgressBarContainer = ({
     }
   }
 
-  function handleClick() {
+  function handleClick () {
     onClick && onClick();
   }
 
   return (
-    <div
-      style={containerStyle}
-      className={styles.fillboxContainer}
-      onClick={handleClick}
-      // onMouseEnter={fixed ? undefined : invertColor}
-      // onMouseLeave={fixed ? undefined : resetColor}
+    <button
+      style={ containerStyle }
+      className={ styles.fillboxContainer }
+      onClick={ handleClick }
+      tabIndex={ 0 }
     >
-      <div style={contentStyle} ref={contentContainer}>
-        {children}
+      <div style={ contentStyle } ref={ contentContainer }>
+        { children }
       </div>
 
-      <span style={barStyle} className={styles.fillboxBar} ref={barRef} />
-    </div>
+      <span style={ barStyle } className={ styles.fillboxBar } ref={ barRef } />
+    </button>
   );
 };
 
