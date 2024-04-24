@@ -34,27 +34,27 @@ const Navbar = ({ links }: Props) => {
 
   return (
     <header>
-      <nav className={styles.navbar} style={themeStyle}>
-        {links.map((l, i) => {
+      <nav className={ styles.navbar } style={ themeStyle }>
+        { links.map((l, i) => {
           return (
-            <span className={styles.linkContainer} key={i}>
+            <span className={ styles.linkContainer } key={ l.name }>
               {/* <NavDotTracker
                 visible={l.path === `#${location}`}
                 color={themeStyle.color}
                 aria-hidden={true}
               /> */}
               <button
-                onClick={handleClick(l.path)}
-                aria-label={l.name}
-                className={styles.link}
-                data-navitem={l.name}
+                onClick={ handleClick(l.path) }
+                aria-label={ l.name }
+                className={ styles.link }
+                data-navitem={ l.name }
               >
-                {l.icon}
+                { l.icon }
               </button>
             </span>
           );
-        })}
-        <SwitchBtn onChange={handleChange} color={themeStyle.color} />
+        }) }
+        <SwitchBtn onChange={ handleChange } color={ themeStyle.color } />
       </nav>
     </header>
   );
