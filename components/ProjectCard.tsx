@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '@styles/ProjectCard.module.sass';
-import { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.
+import { ProjectCardType } from 'types';
 import React from 'react';
 
 interface Props {

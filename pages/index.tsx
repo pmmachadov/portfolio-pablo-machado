@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useMemo, useState } from 'react';
+import Script from 'next/script';
 import ThemeContext, { ThemeOptions } from '@contexts/ThemeContext';
 import NavLocationContext from '@contexts/NavLocationContext';
 import { lightTheme, darkTheme, links } from '@sections/me';
@@ -37,10 +38,10 @@ const Home: NextPage = () => {
               content='Personal Portfolio'
             />
             <link rel='icon' href='/favicon.ico' />
-            <script
-              src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js'
-              async
-            ></script>
+            <Script
+              src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"
+              strategy="afterInteractive"
+            />
           </Head>
           <Navbar links={ links } />
 

@@ -5,7 +5,7 @@ import ProgressBarContainer from '@components/ProgressBarContainer';
 
 type Item = {
   icon?: ReactElement;
-  text: string;
+  text: string;  // Assumed to be unique for each item
   skillLevel: string;
 };
 
@@ -27,12 +27,12 @@ const SkillCard = ({ items, itemHeight }: Props) => {
     paddingLeft: '10px',
   };
 
-  const itemPosition = (i: number) => {
+  const itemPosition = (item: Item) => {
     let top;
     if (isVisible) {
-      top = itemHeight * i;
+      top = itemHeight * items.indexOf(item);  // Adjusted the position calculation
     } else if (hasRender.current) {
-      top = itemHeight * i;
+      top = itemHeight * items.indexOf(item);  // Adjusted the position calculation
     } else {
       top = -itemHeight;
     }
@@ -50,18 +50,18 @@ const SkillCard = ({ items, itemHeight }: Props) => {
         className={ styles.skillItemContainer }
         style={ containerHeight }
       >
-        { items.map((x, i) => {
+        { items.map((item) => {
           return (
-            <div key={ i } style={ itemPosition(i) } className={ styles.skillItem }>
-              { x.icon ? x.icon : null }
+            <div key={ item.text } style={ itemPosition(item) } className={ styles.skillItem }>
+              { item.icon ? item.icon : null }
               <div className={ styles.skillItemTextWrapper }>
                 <ProgressBarContainer
-                  animateTo={ x.skillLevel }
+                  animateTo={ item.skillLevel }
                   containerStyle={ progressBarStyle }
                   fixed={ isVisible || hasRender.current }
                   delay='800ms'
                 >
-                  <span className={ styles.skillItemText }>{ x.text }</span>
+                  <span className={ styles.skillItemText }>{ item.text }</span>
                 </ProgressBarContainer>
               </div>
             </div>
