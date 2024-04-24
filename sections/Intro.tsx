@@ -31,7 +31,8 @@ const Intro = () => {
               className={ styles.myName }
               style={ { fontFamily: 'Archivo Black, sans-serif' } }>
               PABLO MACHADO
-            </span> Professional in the digital sector within the Full Stack Web Development. My skills include: Attention to detail and quality. Planning and organization. Learning and application of knowledge.
+            </span> Professional in the digital sector within the
+            <br /><b>Full Stack Web Development</b>. <br /> My skills include: Attention to detail and quality. Planning and organization. Learning and application of knowledge.
             Did I just pique your interest? Let&apos;s{ ' ' }
             <a onClick={ scrollToContact }>
               <b style={ { textDecoration: 'underline' } }>chat </b>💬

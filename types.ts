@@ -1,9 +1,12 @@
-import { ReactElement } from 'react';
+import { Key, ReactElement } from 'react';
 
 export interface ProjectCardType {
   title: string;
   image: string;
-  links: { name: string; path: string; icon?: ReactElement }[];
+  id: string;
+  links: {
+    id: Key | null | undefined; name: string; path: string; icon?: ReactElement
+  }[];
 }
 
 export interface NavLinkType {

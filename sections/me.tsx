@@ -16,7 +16,6 @@ import {
   faNodeJs,
   faLinkedin,
   faGithub,
-  faTwitter,
 } from '@fortawesome/free-brands-svg-icons'; // types
 
 import {
@@ -28,12 +27,10 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomIcon from '@components/CustomIcon'; //
-// COPY THIS FILE AND RENAME IT TO 'projectData' and add your own data
-//
-//
+
 // THEMES
 //
-// change your theme colors here
+// change theme colors here
 
 export const lightTheme = {
   // font-color
@@ -46,8 +43,7 @@ export const darkTheme = {
   backgroundColor: '#0b132b',
 }; //
 // NAVIGATION
-//
-// add your navbar items here
+
 // make sure the path name matches your section id so the window can scroll to each section
 
 export const links: NavLinkType[] = [
@@ -95,10 +91,9 @@ export const links: NavLinkType[] = [
       />
     ),
   },
-]; //
+];
 // SOCIAL LINKS
-//
-// add your social buttons here
+
 
 export const socialLinks: SocialLinkType[] = [
   {
@@ -116,10 +111,9 @@ export const socialLinks: SocialLinkType[] = [
     rel: 'noopener noreferrer'
   },
 
-]; //
+];
 // PROJECT CARDS
-//
-// add your project data object into this array
+
 
 export const projectData: ProjectCardType[] = [
   {
@@ -130,13 +124,16 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://statuesque-capybara-b6c91d.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
+        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/Pokemon-Card-Game',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
+        id: undefined
       },
     ],
+    id: ''
   },
   {
     title: 'Super Heroes App',
@@ -146,13 +143,16 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://fanciful-snickerdoodle-bde97c.netlify.app/marvel',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
+        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/super-heroes-app',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
+        id: undefined
       },
     ],
+    id: ''
   },
   {
     title: 'Pokedex',
@@ -162,21 +162,20 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://keen-kataifi-559ed9.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
+        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/Javascript-Pokedex',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
+        id: undefined
       },
     ],
+    id: ''
   },
 ];
 
 // SKILL CARDS
-//
-// change your skill cards here
-// each item will be a column of cards
-// create as many or as few as you like
 
 export const skillcard_Styles: SkillItemType[] = [
   {

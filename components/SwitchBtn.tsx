@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Switch from 'react-switch';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
   onChange: (checked: boolean) => void;
@@ -12,7 +11,7 @@ interface Props {
 const SwitchBtn = ({ onChange, color }: Props) => {
   const [isChecked, setIsChecked] = useState(false);
 
-  function handleChange(checked: boolean) {
+  function handleChange (checked: boolean) {
     setIsChecked(checked);
     onChange(checked);
   }
@@ -33,26 +32,26 @@ const SwitchBtn = ({ onChange, color }: Props) => {
 
   return (
     <Switch
-      onChange={handleChange}
-      checked={isChecked}
+      onChange={ handleChange }
+      checked={ isChecked }
       uncheckedIcon={
         <FontAwesomeIcon
-          icon={faSun}
-          style={sunStyle}
+          icon={ faSun }
+          style={ sunStyle }
           color='black'
           title='light-mode'
         />
       }
       checkedIcon={
         <FontAwesomeIcon
-          icon={faMoon}
-          style={moonStyle}
+          icon={ faMoon }
+          style={ moonStyle }
           color='white'
           title='dark-mode'
         />
       }
-      onColor={color}
-      offColor={color}
+      onColor={ color }
+      offColor={ color }
       role='switch'
     />
   );

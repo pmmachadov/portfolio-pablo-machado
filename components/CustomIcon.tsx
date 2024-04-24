@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import ThemeContext from '@contexts/ThemeContext';
-// import Image from 'next/image';
 
 interface Props {
   path: string;
@@ -18,7 +17,7 @@ const CustomIcon = ({ path, size }: Props) => {
     // transition: 'background 750ms ease',
   };
 
-  return <div style={style} aria-hidden={true} />;
+  return <div style={ style } aria-hidden={ true } />;
 };
 
 export default CustomIcon;

@@ -1,20 +1,14 @@
-
-
 import Image from 'next/image';
-import React, { useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@styles/ProjectCard.module.sass';
-
 import { ProjectCardType } from 'types'; // Replace 'path/to/ProjectCardType' with the actual path to the file containing the 'ProjectCardType' type.
+import React from 'react';
 
 interface Props {
   project: ProjectCardType;
 }
 
 const ProjectCard = ({ project }: Props) => {
-  const [detailsVisible, setDetailsVisible] = useState(false);
-  const nodeRef = useRef(null);
-  const duration = 175;
+
 
   return (
     <article className={ styles.projectCardContainer }>
@@ -36,9 +30,9 @@ const ProjectCard = ({ project }: Props) => {
         ) }
         <div className={ styles.projectCardDetails }>
           <div className={ styles.projectCardLinkContainer }>
-            { project.links.map((link, index) => (
+            { project.links.map((link) => (
               <a
-                key={ index }
+                key={ link.id }
                 href={ link.path }
                 target="_blank"
                 rel="noopener noreferrer"

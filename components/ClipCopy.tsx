@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import debounce from 'lodash.debounce';
@@ -17,7 +16,6 @@ const ClipCopy = ({ copy, theme }: Props) => {
   const [messageOpacity, setMessageOpacity] = useState(0);
   const fillbarRef = useRef<HTMLButtonElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
   // debounce to limit user from spamming copy button
   const hideMessage = debounce(() => {
@@ -53,44 +51,42 @@ const ClipCopy = ({ copy, theme }: Props) => {
     backgroundColor: theme.color,
   };
 
-  function handleMouseEnter() {
+  function handleMouseEnter () {
     if (contentRef.current) {
       contentRef.current.style.color = theme.backgroundColor;
     }
   }
 
-  function handleMouseLeave() {
+  function handleMouseLeave () {
     if (contentRef.current) {
       contentRef.current.style.color = '';
     }
   }
   return (
     <section
-      className={styles.messageEmailWrapper}
+      className={ styles.messageEmailWrapper }
       aria-label='copy to clipboard'
     >
-      <p className={styles.clipboardMessage} style={clipboardMessageStyle}>
+      <p className={ styles.clipboardMessage } style={ clipboardMessageStyle }>
         Copied to clipboard!
       </p>
       <button
-        className={styles.emailContainer}
-        onClick={copyEmail(copy)}
-        // onMouseEnter={handleMouseEnter}
-        // onMouseLeave={handleMouseLeave}
-        style={emailContainerStyle}
+        className={ styles.emailContainer }
+        onClick={ copyEmail(copy) }
+        style={ emailContainerStyle }
       >
-        <span ref={contentRef} style={contentStyle}>
-          <span className={styles.email}>{copy}</span>
+        <span ref={ contentRef } style={ contentStyle }>
+          <span className={ styles.email }>{ copy }</span>
           <FontAwesomeIcon
-            icon={faCopy}
+            icon={ faCopy }
             size='lg'
-            className={styles.emailCopyIcon}
+            className={ styles.emailCopyIcon }
           />
         </span>
         <span
-          ref={fillbarRef}
-          className={styles.fillbar}
-          style={fillbarStyle}
+          ref={ fillbarRef }
+          className={ styles.fillbar }
+          style={ fillbarStyle }
         />
       </button>
     </section>
