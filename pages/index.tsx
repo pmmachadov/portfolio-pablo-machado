@@ -26,15 +26,15 @@ const Home: NextPage = () => {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, themeStyle }}>
-      <NavLocationContext.Provider value={{ location, setLocation }}>
-        <div style={themeStyle}>
+    <ThemeContext.Provider value={ { theme, setTheme, themeStyle } }>
+      <NavLocationContext.Provider value={ { location, setLocation } }>
+        <div style={ themeStyle }>
           <Head>
-            {/* change your meta information here */}
-            <title>Steve Vang Dev</title>
+            {/* change your meta information here */ }
+            <title>Personal Portfolio</title>
             <meta
               name='description'
-              content='Personal Portfolio Website by Steve Vang'
+              content='Personal Portfolio'
             />
             <link rel='icon' href='/favicon.ico' />
             <script
@@ -42,9 +42,9 @@ const Home: NextPage = () => {
               async
             ></script>
           </Head>
-          <Navbar links={links} />
+          <Navbar links={ links } />
 
-          {/* add sections here */}
+          {/* add sections here */ }
           <main>
             <Intro />
             <Skills />
