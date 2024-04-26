@@ -117,6 +117,25 @@ export const socialLinks: SocialLinkType[] = [
 
 export const projectData: ProjectCardType[] = [
   {
+    title: 'File Tree Viewer',
+    image: '/assets/images/file-tree.jpg',
+    links: [
+      {
+        name: 'Live Project',
+        path: 'https://shimmering-griffin-6b06b7.netlify.app/',
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
+        id: undefined
+      },
+      {
+        name: 'Code',
+        path: 'https://github.com/pmmachadov/Javascript-Pokedex',
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
+        id: undefined
+      },
+    ],
+    id: ''
+  },
+  {
     title: 'Pokeom Card Game',
     image: '/assets/images/Pokemon-Charizard-Wallpaper.png',
     links: [
