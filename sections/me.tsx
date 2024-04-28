@@ -114,7 +114,6 @@ export const socialLinks: SocialLinkType[] = [
 ];
 // PROJECT CARDS
 
-
 export const projectData: ProjectCardType[] = [
   {
     title: 'File Tree Visualizer',
