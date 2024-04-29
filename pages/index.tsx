@@ -44,7 +44,6 @@ const Home: NextPage = () => {
           </Head>
           <Navbar links={ links } />
 
-          {/* add sections here */ }
           <main>
             <Intro />
             <Skills />

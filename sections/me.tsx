@@ -16,35 +16,29 @@ import {
   faNodeJs,
   faLinkedin,
   faGithub,
-} from '@fortawesome/free-brands-svg-icons'; // types
+} from '@fortawesome/free-brands-svg-icons';
 
 import {
   NavLinkType,
   ProjectCardType,
   SkillItemType,
   SocialLinkType,
-} from 'types'; // icons
+} from 'types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomIcon from '@components/CustomIcon'; //
 
 // THEMES
-//
-// change theme colors here
 
 export const lightTheme = {
-  // font-color
   color: '#293241',
-  // background-color
   backgroundColor: '#f0efeb',
 };
 export const darkTheme = {
   color: '#6EDB93',
   backgroundColor: '#0b132b',
-}; //
+};
 // NAVIGATION
-
-// make sure the path name matches your section id so the window can scroll to each section
 
 export const links: NavLinkType[] = [
   {

@@ -9,7 +9,7 @@ interface Props {
     links: {
       name: string;
       path: string;
-      icon?: React.ReactNode; // Adjust according to the actual usage
+      icon?: React.ReactNode;
     }[];
   };
 }
@@ -28,8 +28,8 @@ const ProjectCard = ({ project }: Props) => {
             <Image
               src={ project.image }
               layout='responsive'
-              width={ 600 }
-              height={ 400 }
+              width={ 400 }
+              height={ 200 }
               objectFit='contain'
               alt={ `Image of ${project.title}` }
             />

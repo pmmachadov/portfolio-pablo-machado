@@ -17,9 +17,11 @@
   min-height: 70px
 
 .layoutContent
+  // Outline es útil para debugging visual, pero está comentado aquí
   // outline: 2px solid
   width: 100%
-  padding: 1.5rem 2rem
-  @media screen and (min-width: 500px)
-    width: clamp(325px, 90%, 1200px)
+  padding: 1.5rem 0rem  // Reducido de 2rem a 1rem a los lados
 
+  @media screen and (min-width: 500px)
+    max-width: 1200px  // Establece un max-width en lugar de usar clamp en width
+    margin: auto       // Centra el contenido cuando el ancho es menor que max-width
