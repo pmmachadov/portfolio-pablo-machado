@@ -1,15 +1,16 @@
 @use '@styles/utility' as *
 @use '@styles/variables' as *
 .projectCardContainer
-  flex: 1 0 30%
-  margin: 10px
-  max-width: 30%
+  grid-template-columns: repeat(3, 1fr)
+  gap: 20px
+  margin: auto
+  width: 95%
+  margin: 2rem 0
 .projectCard
-  width: 100%
   display: flex
   flex-direction: column
-  align-items: center  
-  max-width: 600px
+  align-items: center
+  width: 100%
 .projectImage
   width: 100%
   height: 250px
@@ -17,7 +18,7 @@
   display: flex
   justify-content: center
   align-items: center
-    border-radius: 20px
+  border-radius: 20px
   img
     max-height: 202.5px
     max-width: 360px
@@ -32,9 +33,9 @@
   align-items: center
   padding-top: 1rem
 .ProgressBarContainer
-  width: auto 
+  width: auto
   margin: 5px
-  background-color: #6EDB93 
+  background-color: #6EDB93
   color: white
   text-align: center
   cursor: pointer
@@ -55,7 +56,6 @@
   justify-content: center
   text-decoration: none
   margin: 5px
-  width: auto
   border-radius: 5px
 .detailSummary
   display: block
@@ -68,12 +68,15 @@
   gap: 0.5rem
   flex-wrap: wrap
   padding-top: 1rem
+  const containerStyle
+  display: 'flex'
+  flexDirection: 'column' as const
+  alignItems: 'center'
+  width: '100%'
+  position: 'relative' as 'const'
 @media screen and (min-width: 675px)
   .projectCardLink
     width: 160px
-  .projectCardTitle
-    margin: 2rem 0
-@media (max-width: 800px) 
+@media screen and (max-width: 800px)
   .projectCardContainer
-    flex: 1 0 100%
-    max-width: 100%
+    grid-template-columns: repeat(1, 1fr)
