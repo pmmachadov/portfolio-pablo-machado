@@ -3,9 +3,14 @@ import { ReactElement } from 'react';
 export interface ProjectCardType {
   title: string;
   image: string;
-  links: { name: string; path: string; icon?: ReactElement }[];
-  icon: ReactElement;
+  links: {
+    name: string;
+    path: string;
+    icon?: ReactElement;
+    id?: string;
+  }[];
 }
+
 
 export interface NavLinkType {
   name: string;
@@ -54,7 +59,8 @@ export interface Props {
     links: {
       name: string;
       path: string;
-      icon?: React.ReactNode;
+      icon?: ReactElement;
+      id?: string;
     }[];
   };
 }

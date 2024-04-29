@@ -127,7 +127,6 @@ export const projectData: ProjectCardType[] = [
         id: undefined
       },
     ],
-    id: ''
   },
   {
     title: 'Pokeom Card Game',
@@ -146,7 +145,6 @@ export const projectData: ProjectCardType[] = [
         id: undefined
       },
     ],
-    id: ''
   },
   {
     title: 'Super Heroes App',
@@ -165,7 +163,6 @@ export const projectData: ProjectCardType[] = [
         id: undefined
       },
     ],
-    id: ''
   },
   {
     title: 'Pokedex',
@@ -184,7 +181,6 @@ export const projectData: ProjectCardType[] = [
         id: undefined
       },
     ],
-    id: ''
   },
 ];
 
