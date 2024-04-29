@@ -1,11 +1,11 @@
 declare namespace Cypress {
   interface Chainable {
-    inViewport(
+    inViewport (
       element: string,
       inView: boolean
     ): Chainable<JQuery<HTMLElement>>;
 
-    getByData(key: string, value: string): Chainable<JQuery<HTMLElement>>;
+    getByData (key: string, value: string): Chainable<JQuery<HTMLElement>>;
   }
   interface State {
     (property: 'document'): Document;

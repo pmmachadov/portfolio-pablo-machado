@@ -26,7 +26,7 @@ import {
 } from 'types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CustomIcon from '@components/CustomIcon'; //
+import CustomIcon from '@components/CustomIcon';
 
 // THEMES
 
