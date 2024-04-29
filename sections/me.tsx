@@ -118,13 +118,11 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://shimmering-griffin-6b06b7.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
-        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/my-folder-explorer',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
-        id: undefined
       },
     ],
   },
@@ -136,13 +134,11 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://statuesque-capybara-b6c91d.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
-        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/Pokemon-Card-Game',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
-        id: undefined
       },
     ],
   },
@@ -154,13 +150,11 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://fanciful-snickerdoodle-bde97c.netlify.app/marvel',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
-        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/super-heroes-app',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
-        id: undefined
       },
     ],
   },
@@ -172,13 +166,11 @@ export const projectData: ProjectCardType[] = [
         name: 'Live Project',
         path: 'https://keen-kataifi-559ed9.netlify.app/',
         icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
-        id: undefined
       },
       {
         name: 'Code',
         path: 'https://github.com/pmmachadov/Javascript-Pokedex',
         icon: <FontAwesomeIcon icon={ faCodeBranch } />,
-        id: undefined
       },
     ],
   },
