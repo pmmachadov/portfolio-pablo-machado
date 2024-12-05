@@ -174,6 +174,22 @@ export const projectData: ProjectCardType[] = [
       },
     ],
   },
+  {
+    title: 'My Supermarket List',
+    image: '/assets/images/supermarketimage.webp',
+    links: [
+      {
+        name: 'Live Project',
+        path: 'https://home-inventory-app.netlify.app/',
+        icon: <FontAwesomeIcon icon={ faUpRightFromSquare } />,
+      },
+      {
+        name: 'Code',
+        path: 'https://github.com/pmmachadov/my-supermarket-list',
+        icon: <FontAwesomeIcon icon={ faCodeBranch } />,
+      },
+    ],
+  },
 ];
 
 // SKILL CARDS
