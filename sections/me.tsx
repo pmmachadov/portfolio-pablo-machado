@@ -177,7 +177,7 @@ export const projectData: ProjectCardType[] = [
     links: [
       {
         name: "Live Project",
-        path: "https://keen-kataifi-559ed9.netlify.app/",
+        path: "https://my-version-tic-tac-toe.netlify.app/",
         icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
       },
       {
