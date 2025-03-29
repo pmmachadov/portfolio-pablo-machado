@@ -140,22 +140,6 @@ export const projectData: ProjectCardType[] = [
     ],
   },
   {
-    title: "Super Heroes App",
-    image: "/assets/images/heroesMain.jpg",
-    links: [
-      {
-        name: "Live Project",
-        path: "https://fanciful-snickerdoodle-bde97c.netlify.app/marvel",
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
-      },
-      {
-        name: "Code",
-        path: "https://github.com/pmmachadov/super-heroes-app",
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
-      },
-    ],
-  },
-  {
     title: "Pokedex",
     image: "/assets/images/pokemon-go.png",
     links: [
