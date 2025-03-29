@@ -171,6 +171,22 @@ export const projectData: ProjectCardType[] = [
       },
     ],
   },
+  {
+    title: "Tic Tac Toe",
+    image: "/assets/images/tic-tac-toe.webp",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://my-version-tic-tac-toe.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/tic_tac_toe",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
 ];
 
 // SKILL CARDS
