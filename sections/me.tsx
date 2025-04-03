@@ -171,6 +171,22 @@ export const projectData: ProjectCardType[] = [
       },
     ],
   },
+  {
+    title: "Connect four",
+    image: "/assets/images/connect-four.webp",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://my-last-connect-four.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/my-connect-four",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
 ];
 
 // SKILL CARDS
