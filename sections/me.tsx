@@ -171,6 +171,22 @@ export const projectData: ProjectCardType[] = [
       },
     ],
   },
+  {
+    title: "Super-Flashcards",
+    image: "/assets/images/flashcardsimage.jpg",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://super-flashcards.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/super-flashcards",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
 ];
 
 // SKILL CARDS
