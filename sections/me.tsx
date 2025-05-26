@@ -140,22 +140,6 @@ export const projectData: ProjectCardType[] = [
     ],
   },
   {
-    title: "Super Heroes App",
-    image: "/assets/images/heroesMain.jpg",
-    links: [
-      {
-        name: "Live Project",
-        path: "https://fanciful-snickerdoodle-bde97c.netlify.app/marvel",
-        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
-      },
-      {
-        name: "Code",
-        path: "https://github.com/pmmachadov/super-heroes-app",
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
-      },
-    ],
-  },
-  {
     title: "Pokedex",
     image: "/assets/images/pokemon-go.png",
     links: [
@@ -167,6 +151,38 @@ export const projectData: ProjectCardType[] = [
       {
         name: "Code",
         path: "https://github.com/pmmachadov/Javascript-Pokedex",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
+  {
+    title: "Tic Tac Toe",
+    image: "/assets/images/tic-tac-toe.webp",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://my-version-tic-tac-toe.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/tic_tac_toe",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
+  {
+    title: "Connect four",
+    image: "/assets/images/connect-four.webp",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://my-last-connect-four.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/my-connect-four",
         icon: <FontAwesomeIcon icon={faCodeBranch} />,
       },
     ],
