@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement } from "react";
 
 export interface ProjectCardType {
   title: string;
@@ -8,9 +8,9 @@ export interface ProjectCardType {
     path: string;
     icon?: ReactElement;
     id?: string;
+    style?: React.CSSProperties;
   }[];
 }
-
 
 export interface NavLinkType {
   name: string;
@@ -61,8 +61,7 @@ export interface Props {
       path: string;
       icon?: ReactElement;
       id?: string;
+      style?: React.CSSProperties;
     }[];
   };
 }
-
-

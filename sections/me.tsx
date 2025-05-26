@@ -200,6 +200,7 @@ export const projectData: ProjectCardType[] = [
         name: "Code",
         path: "https://github.com/pmmachadov/super-flashcards",
         icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        style: { zIndex: 1000 },
       },
     ],
   },
