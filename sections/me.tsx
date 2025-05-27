@@ -166,7 +166,7 @@ export const projectData: ProjectCardType[] = [
       },
       {
         name: "Code",
-        path: "https://github.com/pmmachadov/tic_tac_toe",
+        path: "https://github.com/pmmachadov/super_quiz",
         icon: <FontAwesomeIcon icon={faCodeBranch} />,
       },
     ],
@@ -199,6 +199,23 @@ export const projectData: ProjectCardType[] = [
       {
         name: "Code",
         path: "https://github.com/pmmachadov/super-flashcards",
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        style: { zIndex: 1000 },
+      },
+    ],
+  },
+  {
+    title: "Super-quiz",
+    image: "/assets/images/flashcardsimage.jpg",
+    links: [
+      {
+        name: "Live Project",
+        path: "https://mysuperquiz.netlify.app/",
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: "Code",
+        path: "https://github.com/pmmachadov/super_quiz",
         icon: <FontAwesomeIcon icon={faCodeBranch} />,
         style: { zIndex: 1000 },
       },
