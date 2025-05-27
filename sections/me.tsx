@@ -206,7 +206,7 @@ export const projectData: ProjectCardType[] = [
   },
   {
     title: "Super-quiz",
-    image: "/assets/images/flashcardsimage.jpg",
+    image: "/assets/images/questionsjpg.jpg",
     links: [
       {
         name: "Live Project",
