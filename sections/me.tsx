@@ -210,7 +210,7 @@ export const projectData: ProjectCardType[] = [
     links: [
       {
         name: "Live Project",
-        path: "https://mysuperquiz.netlify.app/",
+        path: "https://pmmachadov.github.io/super_quiz/",
         icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
       },
       {
