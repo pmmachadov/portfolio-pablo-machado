@@ -12,6 +12,7 @@ import Skills from '@sections/Skills';
 import Projects from '@sections/Projects';
 import Contact from '@sections/Contact';
 import Footer from '@components/Footer';
+import Fireworks from '@components/Fireworks';
 
 // fonts
 import '@fontsource/archivo-black';
@@ -42,6 +43,9 @@ const Home: NextPage = () => {
               async
             ></script>
           </Head>
+          
+          <Fireworks />
+          
           <Navbar links={ links } />
 
           <main>

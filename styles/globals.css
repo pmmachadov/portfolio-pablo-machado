@@ -3,10 +3,65 @@ body {
   font-family: Ubuntu, sans-serif;
   font-size: 1rem;
   line-height: 1.65rem;
-  margin: 0;
   overflow-x: hidden;
   padding: 0;
   scroll-behavior: smooth !important;
+  background: linear-gradient(-45deg, #000428, #004e92, #009ffd, #00d2ff);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite, stopGradientAnimation 7s ease-in-out forwards;
+  min-height: 100vh;
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 15% 85%,
+      rgba(0, 212, 255, 0.6) 0%,
+      transparent 40%
+    );
+  pointer-events: none;
+  z-index: -10;
+  animation: floatingLights 12s ease-in-out infinite, fadeOutEffects 7s ease-in-out forwards;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes floatingLights {
+  0%,
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.8;
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+    opacity: 1;
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.6;
+  }
 }
 
 * {
@@ -30,4 +85,99 @@ a {
 
 p {
   margin: 1rem 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  background-image: radial-gradient(      0.75px 0.75px at 5px 6px,      #ff0000,      transparent    ),    radial-gradient(0.75px 0.75px at 40px 70px, #ff7f00, transparent),    radial-gradient(0.5px 0.5px at 90px 40px, #ffff00, transparent),    radial-gradient(0.5px 0.5px at 130px 80px, #00ff00, transparent),    radial-gradient(0.75px 0.75px at 160px 30px, #0000ff, transparent),    radial-gradient(0.25px 0.25px at 200px 60px, #4b0082, transparent),    radial-gradient(0.5px 0.5px at 180px 90px, #9400d3, transparent),    radial-gradient(0.75px 0.75px at 60px 120px, #ff1493, transparent);
+  background-repeat: repeat;
+  background-size: 25px 20px;
+  -webkit-animation: sparkle 15s linear infinite, fadeOutEffects 7s ease-in-out forwards;
+  animation: sparkle 15s linear infinite, fadeOutEffects 7s ease-in-out forwards;
+  pointer-events: none;
+  z-index: -20;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+.mac-glass-effect {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  animation: shine 6s ease-in-out infinite, fadeOutEffects 7s ease-in-out forwards;
+  pointer-events: none;
+  z-index: 50;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeOutEffects {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes stopGradientAnimation {
+  0% {
+    animation-play-state: running;
+  }
+  99% {
+    animation-play-state: running;
+  }
+  100% {
+    animation-play-state: paused;
+    background-position: 0% 50%;
+  }
 }

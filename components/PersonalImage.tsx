@@ -7,7 +7,15 @@ const PersonalImage: React.FC<ImageComponentProps> = ({ src = '/assets/images/pe
             alt={ alt }
             className={ className }
             style={ {
-                width: '200px', height: '200px', objectFit: 'cover', borderRadius: '2rem', float: 'right', margin: '3rem', marginTop: 'auto'
+                width: '200px', 
+                height: '200px', 
+                objectFit: 'cover', 
+                borderRadius: '2rem', 
+                float: 'right', 
+                margin: '3rem', 
+                marginTop: 'auto',
+                position: 'relative',
+                zIndex: 1000
             } }
         />
     );
