@@ -97,7 +97,7 @@ const Fireworks = () => {
 
     timeouts.push(setTimeout(() => {
       createFireworks();
-    }, 4000));
+    }, 2500));
 
     return () => {
       timeouts.forEach(timeout => clearTimeout(timeout));
