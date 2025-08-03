@@ -6,6 +6,8 @@ import {
   faUpRightFromSquare,
   faComments,
   faDatabase,
+  faBolt,
+  faPaintBrush,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
@@ -254,6 +256,11 @@ export const skillcard_Languages: SkillItemType[] = [
     skillLevel: "90%",
   },
   {
+    text: "Tailwind CSS",
+    icon: <FontAwesomeIcon icon={faPaintBrush} size="2x" />,
+    skillLevel: "85%",
+  },
+  {
     text: "GIT",
     icon: <FontAwesomeIcon icon={faGithub} size="2x" />,
     skillLevel: "90%",
@@ -266,9 +273,19 @@ export const skillcard_Frameworks: SkillItemType[] = [
     skillLevel: "70%",
   },
   {
+    text: "Vite",
+    icon: <FontAwesomeIcon icon={faBolt} size="2x" />,
+    skillLevel: "75%",
+  },
+  {
     text: "SQL",
     icon: <FontAwesomeIcon icon={faDatabase} size="2x" />,
     skillLevel: "60%",
+  },
+  {
+    text: "MongoDB",
+    icon: <FontAwesomeIcon icon={faDatabase} size="2x" />,
+    skillLevel: "65%",
   },
   {
     text: "Jest",
